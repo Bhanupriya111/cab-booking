@@ -222,6 +222,7 @@ export default function SignUpLogin({role}){
         <input type="text" id="username" onChange={(e)=>handleChangeL(e)} placeholder="Username" className="login-input"></input>
         <input type="password" id="password" onChange={(e)=>handleChangeL(e)} placeholder="password" className="login-input"></input>
         {/* <Link to={role==="Driver"?"/facultydashboard":role === "Rider" ? "":""} state={{role:{role}}}><button className="signup-button" onClick={Login} type="submit">Log in</button></Link> */}
+        <button className="signup-button" onClick={Login} type="submit">Log in</button>
         </form>
         <a href="" className="forgot-pasword">Forgot Password?</a>
     </div>
