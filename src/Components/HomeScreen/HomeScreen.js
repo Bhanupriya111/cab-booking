@@ -3,38 +3,38 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import "./HomeScreen.css";
 export default function HomeScreen() {
-    const [role, setRole] = React.useState("");
-    function roleToFaculty() {
+    let [role, setRole] = React.useState();
+    function roleToAdmin() {
         setRole("Admin")
     }
-    function roleToStudent() {
+    function roleToDriver() {
         setRole("Driver")
     }
-    function roleToStudent() {
+    function roleToRider() {
         setRole("Rider")
     }
     return (
         <div className="homes">
             <div className="home-1-button">
-                {/* <Link to="/signup" state={{ role: "Admin" }}> */}
-                    <div onClick={roleToFaculty}>
+                <Link to="/AdminSignup" state={{ role: "Admin" }}>
+                    <div onClick={roleToAdmin}>
                         <Button title="Admin Login" />
                     </div>
-                {/* </Link> */}
+                </Link>
             </div>
             <div className="home-1-button">
-                {/* <Link to="/signup" state={{ role: "Driver" }}> */}
-                    <div onClick={roleToStudent}>
+                <Link to="/DriverSignup" state={{ role: "Driver" }}>
+                    <div onClick={roleToDriver}>
                         <Button title="Driver Login" />
                     </div>
-                {/* </Link> */}
+                </Link>
             </div>
             <div className="home-1-button">
-                {/* <Link to="/signup" state={{ role: "Rider" }}> */}
-                    <div onClick={roleToStudent}>
+                <Link to="/RiderSignup" state={{ role: "Rider" }}>
+                    <div onClick={roleToRider}>
                         <Button title="Rider Login" />
                     </div>
-                {/* </Link> */}
+                </Link>
             </div>
         </div>
 

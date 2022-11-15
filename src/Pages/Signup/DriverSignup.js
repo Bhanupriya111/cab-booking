@@ -1,9 +1,8 @@
 import React from "react";
 import "./Signup.css";
-import SignupLogin from "../../Components/SignupLogin/SignupLogin";
 import { useLocation } from "react-router-dom";
-
-function Signup(props){
+import DriverSignUpLogin from "../../Components/SignupLogin/DriverSignupLogin";
+function DriverSignup(props){
     
     // const {role} = useLocation().state
     const role = "Rider"
@@ -11,9 +10,9 @@ function Signup(props){
         <div className="signup-page">
             {/* <Navbar/> */}
             <div className="img-div">
-                <SignupLogin role={role}/>
+               <DriverSignUpLogin/>
             </div>
         </div>
     )
 }
-export default Signup;
+export default DriverSignup;

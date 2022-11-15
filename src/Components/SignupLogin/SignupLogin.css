@@ -44,7 +44,7 @@
     margin: 20px 0px;
     width:200px;
     height: 38px;
-    background-color: #282b77;
+    background-color: #080808;
     color:white;
     border:none;
     font-size: 18px;
@@ -55,7 +55,7 @@
 }
 .signup-button:hover{
     font-size: 20px;
-    background-color: rgb(17, 10, 52);
+    background-color: black;
 }
 .forgot-password{
     font-size: 5px;
@@ -66,4 +66,5 @@ a:hover{
 }
 a{
     margin-bottom: 2vh;
+    color: #080808;
 }
