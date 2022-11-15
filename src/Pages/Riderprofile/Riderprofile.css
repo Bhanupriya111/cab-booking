@@ -1,0 +1,142 @@
+.grid {
+    margin: 0 0 !important;
+    width: unset;
+    
+}
+
+.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: black;
+    background: white;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    font-size: .875rem;
+  }
+.cardPlain{
+    background: transparent;
+    box-shadow: none;
+  }
+  .cardProfile{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+
+  .cardHeader{
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    border-radius: none;
+    background: transparent;
+    z-index: 3 !important;
+      margin-left: 20rem;
+      margin-right: 30px;
+      padding: 0;
+      position: relative;
+      color: white;
+      background-color: purple;
+      text-align: start;
+      padding: 5px;
+    }
+    .cardHeader:first-child{
+      border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    }
+    .warningCardHeader.successCardHeader.dangerCardHeader.infoCardHeader.primaryCardHeader.roseCardHeader {
+        border-radius: 3px;
+        margin-top: -20px;
+        padding: 15px;
+      }
+
+    /* cardHeaderStats svg: {
+      fontSize: "36px"
+      lineHeight: "56px"
+      textAlign: "center"
+      width: "36px"
+      height: "36px"
+      margin: "10px 10px 4px"
+    } */
+    /* "cardHeaderStats icardHeaderStats .material-icons": {
+      fontSize: "36px"
+      lineHeight: "56px"
+      width: "56px"
+      height: "56px"
+      textAlign: "center"
+      overflow: "unset"
+      marginBottom: "1px"
+    }
+    "cardHeaderStats$cardHeaderIcon": {
+      textAlign: "right"
+    }
+  } */
+  /* .cardHeaderPlain{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  } */
+  /* .cardHeaderStats {
+    
+      text-align: right;
+
+  } */
+
+
+  .disabled:before{
+      background-color:transparent !important;
+  }
+  .underline:hover:before {
+      border-color: gray !important;
+      border-width: 1px !important;
+
+    
+  }
+  .underline:after{
+      border-color: blue;
+    }
+  .underlineError:after{
+
+      border-color: red;
+
+  }
+  .underlineSuccess:after{
+      border-color: green;
+
+  }
+  .labelRoot{
+    color: gray !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    letter-spacing: unset;
+  }
+  .labelRootError{
+    color: red;
+  }
+  .labelRootSuccess{
+    color:green;
+  }
+  .feedback{
+    position: absolute;
+    top: 18px;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    pointer-events: none;
+  }
+  .marginTop{
+    margin-top: 16px;
+  }
+  .formControl{
+    padding-bottom: 10px;
+    margin: 27px 0 0 0;
+    position: relative;
+    vertical-Align: unset;
+  }
